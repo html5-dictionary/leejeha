@@ -28,7 +28,7 @@
             </ul>
         </nav>
         <section id="html" class="tab_content">
-            <div id="html_intro" class="aside_target">
+            <div id="html_content_wrap" class="aside_target">
                 <h2>HTML(Hyper Text Markup Language)의 정의</h2>
                 <p>해당 웹페이지에서 다른 페이지로 이동할 수 있는 기능(hyper link system)을 가진 문서를 만드는 언어. 즉 웹페이지를 위한 마크업 언어이다.</p>
                 <h2>HTML의 목적</h2>
@@ -104,7 +104,7 @@
                     </table>
                 </div>
             </div>
-            <div id="html_tag" class="aside_target">
+            <div id="html_tag_wrap" class="aside_target">
                 <h2>HTML 5 태그</h2>
                 <div class="tag_container" style="width:100%;height:auto;">
                     <h3>기본 틀을 잡는 요소</h3>
@@ -407,152 +407,25 @@
         </section>
         <!-- //html -->
         <section id="css" class="tab_content">
-            <div class="main_ttl">
-                <h2>CSS 속성 선언 순서 방식 - Grouped by type</h2>
-                <div class="desc_container">
-                    <h3>정렬 순서&#40;Ordering rules&#41;</h3>
-                    <ol>
-                        <li>Positioning &#40;위치속성&#41;
-                            <ol class="props">
-                                <li>position</li>
-                                <li>z-index</li>
-                                <li>top</li>
-                                <li>bottom</li>
-                                <li>left</li>
-                                <li>right</li>
-                                <li>transform</li>
-                            </ol>
-                        </li>
-                        <li>Layout &#40;박스 정렬속성&#41;
-                            <ol class="props">
-                                <li>float</li>
-                                <li>clear</li>
-                            </ol>
-                        </li>
-                        <li>Display &#40;화면 배치속성&#41;
-                            <ol class="props">
-                                <li>display</li>
-                                <li>flex-direction</li>
-                                <li>align-items</li>
-                                <li>flex-wrap</li>
-                                <li>justify-content</li>
-                                <li>align-content</li>
-                                <li>align-items</li>
-                                <li>order</li>
-                                <li>flex-grow</li>
-                                <li>flex-shrink</li>
-                                <li>flex-basis</li>
-                                <li>align-self</li>
-                            </ol>
-                        </li>
-                        <li>Visibility &#40;가시 범위 속성&#41;
-                            <ol class="props">
-                                <li>visibility</li>
-                                <li>overflow</li>
-                                <li>clip</li>
-                            </ol>
-                        </li>
-                        <li>Box model &#40;박스 크기 및 간격 속성 - 밖에서 안으로 향하는 순서대로 나열&#41;
-                            <ol class="props">
-                                <li>box-sizing</li>
-                                <li>width</li>
-                                <li>min-width</li>
-                                <li>max-width</li>
-                                <li>height</li>
-                                <li>min-height</li>
-                                <li>max-height</li>
-                                <li>margin</li>
-                                <li>padding</li>
-                            </ol>
-                        </li>
-                        <li>Color &#40;색상 및 명암 속성&#41;
-                            <ol class="props">
-                                <li>color</li>
-                                <li>border</li>
-                                <li>border-radius</li>
-                                <li>background</li>
-                                <li>box-shadow</li>
-                                <li>opacity</li>
-                            </ol>
-                        </li>
-                        <li>Text &#40;텍스트 및 문단 속성&#41;
-                            <ol>
-                                <li>font-family</li>
-                                <li>font-size</li>
-                                <li>font-weight</li>
-                                <li>font-style</li>
-                                <li>line-height</li>
-                                <li>letter-spacing</li>
-                                <li>white-space</li>
-                                <li>text-overflow</li>
-                            </ol>
-                        </li>
-                        <li>Animation &#40;애니메이션 속성&#41;
-                            <ol>
-                                <li>transition</li>
-                                <li>animation</li>
-                            </ol>
-                        </li>
-                        <li>Others &#40;기타&#41;
-                            <ol>
-                                <li>cursor</li>
-                                <li>outline</li>
-                                <li>outline-color</li>
-                            </ol>
-                        </li>
-                        <li>Pseudo elements &#40;가상클래스&#41;
-                            <ol>
-                                <li>:hover</li>
-                                <li>:focus</li>
-                                <li>:active</li>
-                                <li>:first-child</li>
-                                <li>:last-child</li>
-                                <li>::before</li>
-                                <li>::after</li>
-                            </ol>
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="main_ttl">
-                <h2>CSS 네이밍 케이스와 방법론</h2>
-                <div class="desc_container">
-                    <h3>네이밍 케이스</h3>
-                    <ul class="desc">
-                        <li>
-                            <strong>파스칼 케이스</strong> : 
-                            첫 단어를 대문자로 표기 <em>MainContent</em>
-                        </li>
-                        <li>
-                            <strong>카멜 케이스</strong> : 
-                            초성을 제외한 각 단어의 첫 글자만 대문자로 표기하는 방법 <em>mainContent</em>
-                        </li>
-                        <li>
-                            <strong>케밥 케이스</strong> : 
-                            하이픈으로 단어 연결하는 방법 <em>main-content</em>
-                        </li>
-                        <li>
-                            <strong>스네이크 케이스</strong> : 
-                            언더스코어로 단어 연결하는 방법 <em>main_content</em>
-                        </li>
-                    </ul>
-                    <h3>CSS 방법론</h3>
-                    <ul class="desc">
-                        <li>
-                            <strong>SMACSS</strong> : 
-                            5개의 범주화 -Base, Layout, Module, State, Theme- 를 통해 알아보기 쉽고 재사용 가능한 컴포넌트를 작성할 수 있으며, <br>상태스타일 <em>State</em>을 통해 해당 요소의 상태까지 예측할 수 있다는 장점이 있지만,<br>
-                            SMACSS만의 규칙으로 css작성에 제한을 둘 수 있다는 단점이 있다.
-                        </li>
-                        <li>
-                            <strong>OOCSS</strong> : 
-
-                        </li>
-                        <li>
-                            <strong>BEM</strong> : 
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <div class="css_content_wrap">
+                <h2>CSS 속성 선언 순서 방식</h2>
+                <p> - CSS 속성을 선언할 때 용도가 레이아웃(배열)과 관련이 큰것부터 관련이 적은 순서로 선언하는 편.</p>
+                <ol class="order_box">
+                    <li>레이아웃
+                        <p>display, visibility, overflow, float, clear, position, top, right, bottom, left, z - index </p>
+                    </li>
+                    <li>box모델
+                        <p>width, height, margin, padding</p>
+                    </li>
+                    <li>글꼴
+                        <p>font, color, letter-spacing, text-align, text-decoration, text-indent, vertical align, white-space</p>
+                    </li>
+                    <li>테두리, 배경
+                        <p>border, background</p>
+                    </li>
+                    <li>animation, transform(단독)</li>
+                </ol>
+            </div>   
         </section>
         <!-- //css -->
         <section id="img" class="tab_content">
@@ -619,140 +492,206 @@
         </section>
         <!-- //img -->
         <section id="fonts" class="tab_content">
-            <h2>html에 폰트 / 웹폰트를 적용하는 방법</h2>
-            <ul>
-                <li>시스템 폰트
-                    <p>운영체제에 내장되어 있는 기본 폰트</p>
-                    <p>별도의 설치 없이 바로 사용이 가능하다는 장점이 있다.</p>
-                <li>웹폰트(&#64;import방식과 &#64;font-face방식)</li>
-            </ul>
+            <div class="font_content_wrap">
+                <h2>html에 폰트 / 웹폰트를 적용하는 방법</h2>
+                <ul class="font_list_wrap">
+                    <li>
+                        <h3 class="h3_font_list">시스템 폰트</h3>
+                        <ul>
+                            <li>운영체제에 내장되어 있는 기본 폰트</li>
+                            <li>별도의 설치 없이 바로 사용이 가능하다는 장점이 있다.</li>
+                            <li class="system_font_desc">
+                                <h4 class="h4_sub_title">브라우저에 시스템 폰트 적용과정</h4>
+                                <ol class="order_box">
+                                    <li>다음 코드와 같은 방법에서는 서체의 이름이 1단어가 아니라 2단어 이상일 때 반드시 따옴표로 감싸준다.</li>
+                                    <li>font-family 에 적용한 순서대로 탐색하며 해당 폰트들이 브라우저에 설치되어 있는지 확인 후 적용한다.</li>
+                                    <li>font-family 에서 선언한 글꼴이 모두 설치되어 있지 않다면 운영체제의 기본 글꼴을 적용해서 보여준다. <span class="small_txt">ex.윈도우 : 맑은고딕</span></li>
+                                </ol>
+                                <p class="code_ex_box">
+                                    <code>
+                                        body { font-family: 'Times New Roman', Times, Arial, Helvetica, Nanum Gothic, sans-serif; }
+                                    </code>
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="h3_font_list">&#64;font-face 명령어 사용방법</h3>
+                        <p class="code_ex_box">
+                            <code>
+                                @font-face { <br>
+                                    &nbsp; font-family: 'Nanum Gothic';<br>
+                                    &nbsp; font-style: normal;<br>
+                                    &nbsp; font-weight: 400;<br>
+                                    &nbsp; src: url(/static_fonts/NanumGothic-Regular.eot),<br>
+                                    &nbsp; url(/static_fonts/NanumGothic-Regular.woff2) format("woff2"),<br>
+                                    &nbsp; url(/static_fonts/NanumGothic-Regular.woff) format("woff"),<br>
+                                    &nbsp; url(/static_fonts/NanumGothic-Regular.ttf) format("truetype");<br>
+                                }
+                            </code>
+                        </p>
+                        <ul>
+                            <h4 class="h4_sub_title">font-face 기본</h4>
+                            <li>&#64;font-face 명령어를 사용하여 코드를 작성할 때는 가로줄(인라인)로 작성하는 것이 아니라 세로로 띄워서 작성한다.</li>
+                            <li>css 선언자와 같이 쓰이지 않고 따로 선언되어야 한다(작은 프로젝트에서는 <code>main.css</code>에 함께 선언되는 경우도 있다).</li>
+                            <li>&#64;font-face 명령어는 브라우저가 해당 폰트를 렌더링 해야하는 시점에 작동한다.</li>
+                        </ul>
+                        <ul>
+                            <h4 class="h4_sub_title">웹폰트 확장자 종류</h4>
+                            <li>EOT : IE8 이하 버전과 호환.</li>
+                            <li>TTF : 구형 안드로이드 버전과 호환.</li>
+                            <li>WOFF : 대부분의 모던 브라우저와 호환.</li>
+                            <li>WOFF2 :  WOFF보다 압축률이 30% 더 좋은 확장자이다.</li>
+                        </ul>
+                        <h4 class="h4_sub_title">웹폰트 확장자 선언순서</h4>
+                        <ol class="order_box">
+                            <li>EOT : IE8 이하를 지원할 경우 가장 처음 선언</li>
+                            <li>WOFF2 : IE8을 지원하지 않을 경우 가장 처음 선언(압축률이 가장 좋기 때문)</li>
+                            <li>WOFF</li>
+                            <li>TTF</li>
+                            <p class="code_ex_box">
+                                <code>
+                                    src: url(/static_fonts/NanumGothic-Regular.eot), <br>
+                                    url(/static_fonts/NanumGothic-Regular.woff2) format("woff2"), <br>
+                                    url(/static_fonts/NanumGothic-Regular.woff) format("woff"),<br>
+                                    url(/static_fonts/NanumGothic-Regular.ttf) format("truetype");<br>
+                                </code>
+                            </p>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
         </section>
         <!-- //fonts -->
         <section id="meta" class="tab_content">
-            <h2>About &lt;meta&gt;</h2>
-            <dl>
-                <dt>&lt;meta&gt;의 정의</dt>
-                <dd>해당 문서의 정보에 관련한 데이터를 나타내는 태그</dd>
-            
-                <dt>&lt;meta&gt;의 특징</dt>
-                <dd>&lt;head&gt; 태그 내부에 위치하며, HTML 5에서는 &lt;meta&gt;를 통해 웹페이지에서 사용자가 뷰포트를 제어할 수 있도록 하는 속성을 제공</dd>
-            </dl>
-            <h3>meta태그의 3가지 속성</h3>
-            <table class="meta_tag_desc">
-                <caption>
-                    <strong>meta태그의 3가지 속성</strong>
-                    <p>메타태그의 3가지 속성 http-equiv, name, content에 대해 정리한 표</p>
-                </caption>
-                <colgroup>
-                    <col style="width:20%">
-                    <col style="width:20%">
-                    <col style="width:auto">
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th scope="row">속성</th>
-                        <th scope="row">속성값</th>
-                        <th scope="row">설명</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>http-equiv</td>
-                        <td>항목명</td>
-                        <td class="align_left">웹 브라우저가 서버에 명령을 내리는 속성에 대한 항목명을 나타냄<br>HTML 문서가 응답 헤더와 함께 서버에서 브라우저로 전송되었을 때에만 의미를 지님</td>
-                    </tr>
-                    <tr>
-                        <td>content</td>
-                        <td>정보값</td>
-                        <td class="align_left">meta 정보의 내용 지정</td>
-                    </tr>
-                    <tr>
-                        <td>name</td>
-                        <td>정보의 이름</td>
-                        <td class="align_left">meta 정보의 이름을 지정할 수 있음 <br> 지정하지 않을 시 http-equiv와 같은 기능을 함</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3>meta태그 종류</h3>
-            <ul class="meta_list">
-                <li>
-                    <p>검색엔진 키워드 정의</p>
-                    <p>&lt;meta name="keyword" content="웹퍼블리셔, 신입 웹퍼블리셔, 이제하, html, css, javascript"&gt;</p>
-                </li>
-                <li>
-                    <p>웹페이지에 대한 설명 정의</p>
-                    <p>&lt;meta name="description" content="markup with html5"&gt;</p>
-                </li>
-                <li>
-                    <p>웹페이지 저작자 정의</p>
-                    <p>&lt;meta name="author" content="leejeha"&gt;</p>
-                </li>
-                <li>
-                    <p>모바일에서 뷰포트 너비를 디바이스에 맞추기 위한 정의</p>
-                    <p>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-                </li>
-                <li>
-                    <p>IE 하위버전 호환</p>
-                    <p>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</p>
-                </li>
-                <li>
-                    <p>검색 로봇 제어 <a href="https://webclub.tistory.com/354" class="refer" target="_blank">참조</a></p>
-                    <p>&lt;meta name="Robots" content="noindex, nofollow"&gt;</p>
-                </li>
-            </ul>
-
-            <h3>HTML 5에서 변경된 사항</h3>
-            <ul class="meta_list non_dmc">
-                <li>
-                    <p>HTML 5에서는 &lt;meta&gt;요소의 scheme 속성을 더 이상 지원하지 않으며 문자코딩(character set)을 간단하게 정의 할 수 있는 chrset속성이 추가됨</p>
-                    <p>
-                        HTML 4.01 &#58;&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;<br>
-                        HTML 5 &#58;&lt;meta charset="UTF-8"&gt;
-                    </p>
-                </li>
-            </ul>
-
-            <h3>브라우저 호환성</h3>
-            <table class="meta_tag_desc browser_interch">
-                <caption>
-                    <strong>meta태그 브라우저 호환성</strong>
-                    <p>메타태그를 지원하는 브라우저와 각 브라우저의 버전을 나타낸 표. 브라우저 구분은 이미지로 하였다.</p>
-                </caption>
-                <colgroup>
-                    <col style="width:14%">
-                    <col style="width:14%">
-                    <col style="width:14%">
-                    <col style="width:14%">
-                    <col style="width:14%">
-                    <col style="width:14%">
-                    <col style="width:14%">
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th scope="row">태그명</th>
-                        <th scope="row"><img src="./img/main/meta/browser_chorme.png" alt="크롬"></th>
-                        <th scope="row"><img src="./img/main/meta/browser_edge.png" alt="마이크로소프트 엣지"></th>
-                        <th scope="row"><img src="./img/main/meta/browser_internet_explorer.png" alt="인터넷 익스플로러"></th>
-                        <th scope="row"><img src="./img/main/meta/browser_firefox.png" alt="파이어폭스"></th>
-                        <th scope="row"><img src="./img/main/meta/browser_safari.png" alt="사파리"></th>
-                        <th scope="row"><img src="./img/main/meta/browser_opera.png" alt="오페라"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>&lt;meta&gt;</td>
-                        <td>지원</td>
-                        <td>지원</td>
-                        <td>지원</td>
-                        <td>1.0</td>
-                        <td>지원</td>
-                        <td>지원</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="meta_content_wrap">
+                <h2>About &lt;meta&gt;</h2>
+                <dl>
+                    <dt>&lt;meta&gt;의 정의</dt>
+                    <dd>해당 문서의 정보에 관련한 데이터를 나타내는 태그</dd>
+                
+                    <dt>&lt;meta&gt;의 특징</dt>
+                    <dd>&lt;head&gt; 태그 내부에 위치하며, HTML 5에서는 &lt;meta&gt;를 통해 웹페이지에서 사용자가 뷰포트를 제어할 수 있도록 하는 속성을 제공</dd>
+                </dl>
+                <h3>meta태그의 3가지 속성</h3>
+                <table class="meta_tag_desc">
+                    <caption>
+                        <strong>meta태그의 3가지 속성</strong>
+                        <p>메타태그의 3가지 속성 http-equiv, name, content에 대해 정리한 표</p>
+                    </caption>
+                    <colgroup>
+                        <col style="width:20%">
+                        <col style="width:20%">
+                        <col style="width:auto">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="row">속성</th>
+                            <th scope="row">속성값</th>
+                            <th scope="row">설명</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>http-equiv</td>
+                            <td>항목명</td>
+                            <td class="align_left">웹 브라우저가 서버에 명령을 내리는 속성에 대한 항목명을 나타냄<br>HTML 문서가 응답 헤더와 함께 서버에서 브라우저로 전송되었을 때에만 의미를 지님</td>
+                        </tr>
+                        <tr>
+                            <td>content</td>
+                            <td>정보값</td>
+                            <td class="align_left">meta 정보의 내용 지정</td>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>정보의 이름</td>
+                            <td class="align_left">meta 정보의 이름을 지정할 수 있음 <br> 지정하지 않을 시 http-equiv와 같은 기능을 함</td>
+                        </tr>
+                    </tbody>
+                </table>
+    
+                <h3>meta태그 종류</h3>
+                <ul class="meta_list order_box">
+                    <li>
+                        <p>검색엔진 키워드 정의</p>
+                        <p>&lt;meta name="keyword" content="웹퍼블리셔, 신입 웹퍼블리셔, 이제하, html, css, javascript"&gt;</p>
+                    </li>
+                    <li>
+                        <p>웹페이지에 대한 설명 정의</p>
+                        <p>&lt;meta name="description" content="markup with html5"&gt;</p>
+                    </li>
+                    <li>
+                        <p>웹페이지 저작자 정의</p>
+                        <p>&lt;meta name="author" content="leejeha"&gt;</p>
+                    </li>
+                    <li>
+                        <p>모바일에서 뷰포트 너비를 디바이스에 맞추기 위한 정의</p>
+                        <p>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+                    </li>
+                    <li>
+                        <p>IE 하위버전 호환</p>
+                        <p>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</p>
+                    </li>
+                    <li>
+                        <p>검색 로봇 제어 <a href="https://webclub.tistory.com/354" class="refer" target="_blank">참조</a></p>
+                        <p>&lt;meta name="Robots" content="noindex, nofollow"&gt;</p>
+                    </li>
+                </ul>
+    
+                <h3>HTML 5에서 변경된 사항</h3>
+                <ul class="meta_list order_box non_dmc">
+                    <li>
+                        <p>HTML 5에서는 &lt;meta&gt;요소의 scheme 속성을 더 이상 지원하지 않으며 문자코딩(character set)을 간단하게 정의 할 수 있는 chrset속성이 추가됨</p>
+                        <p>
+                            HTML 4.01 &#58;&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;<br>
+                            HTML 5 &#58;&lt;meta charset="UTF-8"&gt;
+                        </p>
+                    </li>
+                </ul>
+    
+                <h3>브라우저 호환성</h3>
+                <table class="meta_tag_desc">
+                    <caption>
+                        <strong>meta태그 브라우저 호환성</strong>
+                        <p>메타태그를 지원하는 브라우저와 각 브라우저의 버전을 나타낸 표. 브라우저 구분은 이미지로 하였다.</p>
+                    </caption>
+                    <colgroup>
+                        <col style="width:14%">
+                        <col style="width:14%">
+                        <col style="width:14%">
+                        <col style="width:14%">
+                        <col style="width:14%">
+                        <col style="width:14%">
+                        <col style="width:14%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="row">태그명</th>
+                            <th scope="row"><img src="./img/main/meta/icon_cross_chrm.png" alt="크롬"></th>
+                            <th scope="row"><img src="./img/main/meta/icon_cross_edge.png" alt="마이크로소프트 엣지"></th>
+                            <th scope="row"><img src="./img/main/meta/icon_cross_ie.png" alt="인터넷 익스플로러"></th>
+                            <th scope="row"><img src="./img/main/meta/icon_cross_firefox.png" alt="파이어폭스"></th>
+                            <th scope="row"><img src="./img/main/meta/icon_cross_safari.png" alt="사파리"></th>
+                            <th scope="row"><img src="./img/main/meta/icon_cross_opera.png" alt="오페라"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;meta&gt;</td>
+                            <td>지원</td>
+                            <td>지원</td>
+                            <td>지원</td>
+                            <td>1.0</td>
+                            <td>지원</td>
+                            <td>지원</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
         <!-- // meta tag -->
+
+
         <button onclick="scrollToTop();" id="top" class="top_btn" title="Go to top"></button>
         <!-- // top button -->
 
